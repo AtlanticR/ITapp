@@ -20,7 +20,17 @@ The first time you run it, it will take a **very** long time to install, but thi
 - Repeat the above for the destination site on the Destination tab.
 - On the Summary tab, select the "Applicable Product Description" (i.e. the product being moved intentionally), and select relevant "Other Considerations"
 - Review the Supportive Tables and Suggested Response on the Summary Tab. The user can return to the other tabs to modify any of the inputs if desired.
+-Due to the multitude of combined AIS at each site and the potential impacts of AIS mitigation treatments to impact product (e.g. oysters), Table 2 now lists all possible mitigation treatments.Assessors using the app must select the treatment option from Table 2. 
+
+#Tabs
+-All Introduction & Transfer decisions are recommended to use the biofouling and incidental report. These are data collected and verified by DFO. 
+-The Public Reports and eDNA tab can be used to inform decisions when more robust data is unavailable. 
 
 # Troubleshoouting
 - Any issues can be posted on the [GitHub](https://github.com/remi-daigle/ITapp/issues) repository
 
+#References
+-AIS mitigation treatments were derived from Masse-Beaulne et al. (2025) and only includes options with moderate to high certainty of effectiveness, unless stated otherwise.
+-Massé-Beaulne, V., Simard, N., Bernier, R.Y., Pearce, C.M. and Therriault, T.W. 2025. Mitigation Measures to Reduce the Risk of Introduction and Spread of Aquatic Invasive Species through Shellfish and Macroalgal Movements. DFO Can. Sci. Advis. Sec. Res. Doc. 2025/011. viii + 150 p.
+-CSAS English Research Document available at: https://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2025/2025_011-eng.pdf
+-All raw data for the Maritimes Biofouling Program can be accessed here: https://open.canada.ca/data/en/dataset/8d87f574-0661-40a0-822f-e9eabc35780d

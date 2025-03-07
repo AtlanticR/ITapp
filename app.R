@@ -1,4 +1,4 @@
-if(!require("shiny")) install.packages("shiny")
+#if(!require("shiny")) install.packages("shiny")
 if(!require("sf")) install.packages("sf")
 if(!require("leaflet")) install.packages("leaflet")
 if(!require("leaflet.minicharts")) install.packages("leaflet.minicharts")
@@ -218,7 +218,13 @@ ui <- navbarPage(
                         value = 3),
            numericInput(inputId = "incidentalyear",
                         label = "Ignore incidental observation records older than:",
-                        value = 1900)
+                        value = 1900),
+           numericInput(inputId = "publicyear",
+                        label = "Ignore citizen science observation records older than:",
+                        value = 1900),
+           numericInput(inputId = "metabarcodeyear",
+                        label = "Ignore eDNA observation records older than:",
+                        value = 2020)
   ),
   
   tabPanel("Read Me",
@@ -267,6 +273,7 @@ server <- function(input, output, session) {
   metabarcoding_filtered <- reactive({
     #browser()
     metabarcoding %>% 
+      filter(Year>=input$metabarcodeyear) %>% 
       as.data.table() %>% 
       dplyr::select(-geometry) %>%
       gather(key = "Species", value = "Presence",-StnLocation,-Year) %>%
@@ -316,6 +323,7 @@ server <- function(input, output, session) {
   publicdata_filtered <- reactive({
      #browser()
     publicdata %>% 
+      filter(Year>=input$publicyear) %>% 
       as.data.table() %>% 
       dplyr::select(-geometry) %>% 
       group_by(Species,StnLocation) %>% 

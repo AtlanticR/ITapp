@@ -1,0 +1,13 @@
+name: ITapp
+title: ITapp
+username: mar-dfo-ais-sarahk
+account: mar-dfo-ais-sarahk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14184584
+bundleId: 9907266
+url: https://mar-dfo-ais-sarahk.shinyapps.io/ITapp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: recentdata
